@@ -12,6 +12,8 @@ function operate(operator, stvalue, ndvalue) {
   let y = ndvalue;
   if (operator === "*") {
     return x * y;
+  } else if (operator === "/" && (x === 0 || y === 0 || x === '0' || y === '0')) {
+    return "1";
   } else if (operator === "/") {
     return x / y;
   } else if (operator === "+") {
